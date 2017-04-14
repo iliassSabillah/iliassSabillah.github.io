@@ -1,7 +1,7 @@
 
 ## Creator
 
-This site was created by **[Iliass Sabillah]
+This site was created by **[Iliass Sabillah]**
 
 * https://www.linkedin.com/in/iliasssabillah/
 * https://github.com/iliassSabillah
