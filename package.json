@@ -1,12 +1,8 @@
 {
-  "name": "creative",
-  "title": "Creative",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/creative",
-  "author": "Start Bootstrap",
+  "name": "portfolio",
+  "author": "Iliass",
   "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    "type": "MIT"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
@@ -24,6 +20,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+    "url": "https://github.com/iliassSabillah/iliassSabillah.github.io"
   }
 }
