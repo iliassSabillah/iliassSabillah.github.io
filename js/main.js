@@ -2,8 +2,9 @@
     "use strict"; // Start of use strict
 
     $(window).scroll(()=>{
-    	//navbar style when scrolling
+
 		if($(window).width() > 480) {
+            //navbar style when scrolling
             if ($(window).scrollTop() >= 50) {
 
                 $('nav').css({
@@ -40,28 +41,7 @@
                 })
             }
         }
-		// else if( $(window).scrollTop() < 50  && $(window).width() < 400){
-         //    $('nav').css({
-         //        'display': 'flex',
-         //        'background-color': 'transparent',
-         //        'flex-flow': 'column nowrap',
-         //        'border-bottom': '2px solid white',
-         //        'padding-bottom': '10px',
-         //    });
-        	// $('.navbar-brand').css({
-         //        'flex-grow': '2',
-         //        'align-self': 'center',
-         //        'text-align': 'center',
-         //        'flex': '1',
-         //        'padding': '15px 15px',
-         //        'min-width': '185px',
-         //        'font-size': '18px',
-         //        'line-height': '20px',
-         //        'font-family': '"Open Sans","Helvetica Neue",Arial,sans-serif"',
-         //        'font-weight': '700',
-         //        'text-transform': 'uppercase',
-         //    })
-		// }
+
     })
 
 })(jQuery); // End of use strict
