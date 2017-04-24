@@ -122,7 +122,6 @@ li >a {
 
 	}
 	.navbar-brand {
-		flex-grow: 2;
 		align-self: center;
 		text-align: center;
 		flex: 1;
