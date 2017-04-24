@@ -1,0 +1,354 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  min-width: 400px;
+}
+
+ul  {
+	list-style: none;
+}
+li >a {
+	list-style: none;
+	text-decoration: none;
+}
+
+.mainContent {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+/*Heading section*/
+
+.header {
+	background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url(../img/header.jpg);
+    color: #fff;
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	height: inherit;
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px){
+	.nav{
+		display: flex;
+		position: fixed;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		right: 0;
+		color: rgba(255,255,255,.7);
+		background-color: transparent;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		max-height: 50px;
+		border-bottom: 1px solid white;
+
+	}
+	.navbar-brand {
+		flex: 1;
+		text-align: center;
+	    padding: 15px 15px 15px 0;
+	    min-width: 185px;
+	    font-size: 18px;
+	    line-height: 20px;
+	    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	    font-weight: 700;
+    	text-transform: uppercase;
+	}
+	.navbar-brand:hover {
+		color: #5e5e5e;
+    	background-color: transparent;
+    	color: #fff;
+	}
+	.navbar {
+		flex: 3;
+		display: flex;
+		flex-grow: 3;
+	    font-size: 18px;
+	    text-decoration: none;
+	    color: white;
+	    line-height: 20px;
+	    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	    font-weight: 400;
+	}
+
+	.nav-links {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		margin:0;
+		padding: 0;
+		background-color: transparent;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+	}
+	.nav-links-portfolio:hover {
+		transition: all 5s;
+		color: white;
+	}
+	.nav-link-portfolio {
+		flex-basis: 100px;
+		margin: auto 0;
+		padding: auto 0;
+	}
+	.nav-link-contacts {
+		flex-basis: 100px;
+		margin: auto 0;
+		padding: auto 0;
+
+	}
+}
+
+@media screen and (max-width: 480px){
+	.nav{
+		display: flex;
+		background-color: transparent;
+		flex-flow: column nowrap;
+		border-bottom: 2px solid white;
+		padding-bottom: 10px;
+
+	}
+	.navbar-brand {
+		flex-grow: 2;
+		align-self: center;
+		text-align: center;
+		flex: 1;
+	    padding: 15px 15px;
+	    min-width: 185px;
+	    font-size: 18px;
+	    line-height: 20px;
+	    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	    font-weight: 700;
+    	text-transform: uppercase;
+	}
+
+	.nav-links{
+		display: flex;
+		width: 100%;
+		height: 100%;
+		margin:0;
+		padding: 0;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+	.nav-link-portfolio {
+		flex-shrink: 1;
+		flex-basis: 50px;
+	}
+	.nav-link-contacts {
+		flex-shrink: 1;
+		flex-basis: 50px;
+
+	}
+}
+
+.content-top {
+	line-height: 1.1;
+	align-self: center;
+	display: flex;
+	margin: 15% auto;
+	width: 80%;
+	flex-direction: column;
+}
+
+.homeHeading {
+	font-size: 50px;
+	text-align: center;
+}
+
+.divider {
+    margin: 30px auto;
+    border-color: #F05F40;
+    border-width: 2px;
+    background: #F05F40;
+    width: 50px;
+    border-top: 2px solid #F05F40;
+    box-sizing: content-box;
+}
+.divider > hr {
+    border-top: 10px solid #F05F40;
+    box-sizing: content-box;
+    background-color: yellow;
+}
+.divider-bottom {
+    margin: 0px auto;
+    border-color: #F05F40;
+    width: 100%;
+    border-top: 1px solid #eee;
+    box-sizing: content-box;
+}
+.description  {
+    max-width: 80%;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+	text-align: center;
+	font-weight: 300;
+  	color: rgba(255, 255, 255, 0.7);
+  	font-size: 18px;
+}
+
+.githubLink {
+	text-align: center;
+	text-decoration: none;
+	align-self: center;
+    width: 25%;
+    min-width: 200px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 300px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #F05F40;
+    border-color: #F05F40;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+/*projects section*/
+
+.portfolioHeading {
+	background-color: #4e4340;
+	color: #afadb0;
+	display: flex;	
+	justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: 215px;
+}
+
+@media screen and (max-width: 480px){
+	.projects {
+	  	display: flex;
+	    flex-direction: column;
+	    -webkit-transition: all .35s;
+	    -moz-transition: all .35s;
+	    transition: all .35s;
+  }
+}
+
+@media screen and (min-width: 480px){
+	.projects {
+	    display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		background-color: #afadb0;
+  }
+  	.project {
+  		flex-basis: 26em;
+  	}
+}
+
+.portfolio-box {
+    position: relative;
+    display: block;
+    margin: 10px 10px;
+    min-width: 400px;
+
+}
+.portfolio-box .portfolio-box-caption {
+    color: #fff;
+    margin: auto;
+    padding: auto;
+    opacity: 0;
+    display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+    background: rgba(240,95,64,.9);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .35s;
+}
+.portfolio-box .portfolio-box-caption:hover {
+	opacity: 1;
+}
+
+.project-name {
+	flex: 1;
+	font-size: 20px;
+	align-self: center;
+    padding-top: 5%;
+
+}
+.project-description {
+	font-size: 14px;
+	flex-grow: 2;
+	flex: 3;
+		
+}
+
+/*Resume link section*/
+
+.resume-link {
+	background-color: #F05F40;
+	color: black;
+	font-weight: 700;
+	border-radius: 300px;
+	padding: 10px 30px;
+}
+/*contacts section*/
+
+
+aside {
+	background-color: #4e4340;
+	color: white;
+	display: flex;
+	justify-content: center;
+
+}
+.contacts {
+	display: flex;
+	flex-direction: column;
+}
+.contactsHeading {
+	align-self: center;
+}
+
+.contactsLinks {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+	padding-top: 50px;
+	height: 100%;
+	justify-content: space-around;
+}
+
+.link {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 140px;
+	align-items: center;
+}
+.fa {
+	align-self: center;
+	
+}
+.urls {
+	text-decoration: none;
+	color: #F05F40;
+}
+.resume-link, .nav-link-contacts > a, .nav-link-portfolio  > a {
+	text-decoration: none;
+	color: #afadb0;
+}
