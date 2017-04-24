@@ -2,9 +2,8 @@
     "use strict"; // Start of use strict
 
     $(window).scroll(()=>{
-    	console.log('scrollTop',$(window).scrollTop())
     	//navbar style when scrolling
-    	if($(window).scrollTop() >= 50){
+    	if($(window).scrollTop() >= 50 && $(window).width()> 400){
     		$('nav').css({
 				'backgroundColor':'white',
 				'z-index':'3',
